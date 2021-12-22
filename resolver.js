@@ -50,6 +50,7 @@ const resolvers = {
                 deleteProject(args.nombreProyecto)
             }
         },
+
         insertUserToProject: async (parent, args, context, info) => addUserProject(args.identificacion, args.nombreProyecto),
         createUser: (parent, args, context, info) => {
             const { clave } = args.user;
@@ -96,5 +97,6 @@ const resolvers = {
             }
         }
     }
-}
+} 
+
 module.exports = resolvers

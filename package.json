@@ -9,6 +9,7 @@
   },
   "scripts": {
     "start": "node ./index.js",
+    "build": "tsc -p . && ncp src/schema buid/schema",
     "dev": "nodemon ./index.js",
     "test": "jest --forceExit"
   },
